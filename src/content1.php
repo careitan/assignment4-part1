@@ -13,7 +13,7 @@
 		$filepath = implode('/', $filepath);
 		$redirect = "http://".$_SERVER['HTTP_HOST'].$filepath;
 		header("Location: {$redirect}/login.php", true);
-		die();
+		die("Session Start Header");
 	}
 	/* END of Refactored code */
 	/* PHP Online Language Reference - http://us2.php.net/manual/en/index.php */
