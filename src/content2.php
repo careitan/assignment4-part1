@@ -1,9 +1,12 @@
 <?php
 	error_reporting(E_ALL);
 	ini_set('display_errors', 'On');
-	session_start();
+	header('Content-Type: text/plain');
 
+
+	/* PHP Online Language Reference - http://us2.php.net/manual/en/index.php */
 	/* REFACTORED From CS494 Lecture WK 5 Sessions Lecture*/
+	session_start();
 	if (isset($_GET['action']) && $_GET['action'] == 'logout') {
 		$_SESSION['logged'] = 0;
 		$_SESSION = array();
@@ -15,7 +18,6 @@
 		die();
 	}
 	/* END of Refactored code */
-
 	?>
 	<!DOCTYPE html>
 	<head>
@@ -24,7 +26,6 @@
 	</head>
 	<body>
 		<?php
-		/* PHP Online Language Reference - http://us2.php.net/manual/en/index.php */
 			if (session_status() == PHP_SESSION_ACTIVE) {
 				if (!isset($_POST['username']) && !isset($_SESSION['logged'])){
 					/* USERNAME is not logged on or verifiable. */
