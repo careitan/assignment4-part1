@@ -1,0 +1,16 @@
+table, tr, td {
+	border: 3px solid #000;
+	table-layout: auto;
+}
+
+th {
+	border: 3px solid #000;
+	table-layout: auto;
+	background-color: yellow;
+}
+
+tr+td {
+	border: 3px solid #000;
+	table-layout: auto;
+	background-color: yellow;
+}
