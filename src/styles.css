@@ -14,3 +14,7 @@ tr+td {
 	table-layout: auto;
 	background-color: yellow;
 }
+
+input {
+  margin: 5px;
+}
