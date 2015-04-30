@@ -3,7 +3,6 @@
 	ini_set('display_errors', 'On');
 	header('Content-Type: text/plain');
 
-
 	/* REFACTORED From CS494 Lecture WK 5 Sessions Lecture*/
 	session_start();
 	if (isset($_GET['action']) && $_GET['action'] == 'logout') {

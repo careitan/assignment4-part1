@@ -3,7 +3,6 @@
 	ini_set('display_errors', 'On');
 	header('Content-Type: text/plain');
 
-
 	/* PHP Online Language Reference - http://us2.php.net/manual/en/index.php */
 	/* REFACTORED From CS494 Lecture WK 5 Sessions Lecture*/
 	session_start();
