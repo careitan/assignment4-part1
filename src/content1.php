@@ -2,7 +2,6 @@
 	error_reporting(E_ALL);
 	ini_set('display_errors', 'On');
 	header('Content-Type: text/plain');
-
 	/* REFACTORED From CS494 Lecture WK 5 Sessions Lecture*/
 	session_start();
 	if (isset($_GET['action']) && $_GET['action'] == 'logout') {
@@ -51,7 +50,7 @@
 					if ($_SESSION['logged'] = 1) {
 						echo '<h2>Hello '.$_SESSION['username'].', you have visited this page '.$_SESSION['visits'].' times before. ';
 						$_SESSION['visits']++;
-						echo '<br>Click <a href="content2.php>here</a> to visit Content2.PHP page.<br>'
+						echo '<br>Click <a href="content2.php>here</a> to visit Content2.PHP page.<br>';
 						echo 'Click <a href="content1.php?action=logout">here</a> to logout.';
 					}
 				}
