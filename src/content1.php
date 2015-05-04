@@ -49,9 +49,9 @@ if (isset($_GET['action']) && $_GET['action'] == 'logout') {
 			/* USERNAME is logged on and verifed. */
 			if ($_SESSION['logged'] = 1) {
 				echo '<h2>Hello '.$_SESSION['username'].', you have visited this page '.$_SESSION['visits'].' times before. ';
-				$_SESSION['visits']++;
-				echo '<br>Click <a href="content2.php>here</a> to visit Content2.PHP page.<br>';
+				echo 'Click <a href="content2.php>here</a> to visit Content2.PHP page.';
 				echo 'Click <a href="content1.php?action=logout">here</a> to logout.';
+				$_SESSION['visits']++;
 			}
 		}
 	}
