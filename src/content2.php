@@ -42,16 +42,16 @@ if (isset($_GET['action']) && $_GET['action'] == 'logout') {
 				}
 			}
 
-			if (!isset($_SESSION['visits'])) {
-				$_SESSION['visits'] = 0;
+			if (!isset($_SESSION['visits2'])) {
+				$_SESSION['visits2'] = 0;
 			}
 
 			/* USERNAME is logged on and verifed. */
 			if ($_SESSION['logged'] = 1) {
-				echo '<h2>Hello '.$_SESSION['username'].', you have visited this page '.$_SESSION['visits'].' times before.<br>';
+				echo '<h2>Hello '.$_SESSION['username'].', you have visited this page '.$_SESSION['visits2'].' times before.<br>';
 				echo 'Click <a href="content1.php">here</a> to visit Content1.PHP page.<br>';
 				echo 'Click <a href="content2.php?action=logout">here</a> to logout.';
-				$_SESSION['visits']++;
+				$_SESSION['visits2']++;
 			}
 		}
 	}
